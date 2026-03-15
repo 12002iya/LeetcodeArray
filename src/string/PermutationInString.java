@@ -24,10 +24,8 @@ public class PermutationInString {
         int[] s1Count = new int[26];
         int[] s2Count = new int[26];
         for (int i = 0; i < s1.length(); i++) {
-
             s1Count[s1.charAt(i) - 'a']++;
             s2Count[s2.charAt(i) - 'a']++;
-
         }
         if (Arrays.equals(s1Count, s2Count)) {
             return true;
