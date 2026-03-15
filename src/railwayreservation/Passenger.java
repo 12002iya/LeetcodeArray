@@ -82,4 +82,13 @@ public class Passenger {
     public void setStatus(String status) {
         this.status = status;
     }
+    @Override
+    public String toString() {
+        return "ID: " + passengerId +
+                ", Name: " + name +
+                ", Age: " + age +
+                ", Gender: " + gender +
+                ", Status: " + status +
+                ", Berth: " + allottedPreference;
+    }
 }
